@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 滚动内容从标题栏后面穿过时，这里负责把它们遮住：
+         顶部几乎不透明（盖住状态栏和标题），底部渐淡以便和内容区衔接 -->
+    <gradient
+        android:angle="270"
+        android:endColor="#2614161B"
+        android:startColor="#F014161B"
+        android:type="linear" />
+</shape>

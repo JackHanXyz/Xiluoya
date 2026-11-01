@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.AppTheme.Light" parent="Theme.Material3.Light.Shizuku">
+        <item name="android:statusBarColor">?android:colorBackground</item>
+
+        <item name="appColorPrimary">@color/app_color_light</item>
+        <item name="homeCardStyle">@style/Card.Light</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.Xiluoya</item>
+        <item name="android:fontFamily">@font/misans</item>
+        <item name="fontFamily">@font/misans</item>
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Xiluoya.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Xiluoya.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Xiluoya.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Xiluoya.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Xiluoya.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Xiluoya.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Xiluoya.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Xiluoya.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Xiluoya.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Xiluoya.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Xiluoya.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Xiluoya.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Xiluoya.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Xiluoya.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Xiluoya.LabelSmall</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Light" parent="Base.AppTheme.Light" />
+
+    <style name="Base.AppTheme" parent="Theme.Material3.Dark.Shizuku">
+        <item name="android:colorBackground">#0B0D12</item>
+        <item name="appColorPrimary">@color/app_color_dark</item>
+        <item name="homeCardStyle">@style/Card</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.Xiluoya</item>
+        <item name="android:fontFamily">@font/misans</item>
+        <item name="fontFamily">@font/misans</item>
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Xiluoya.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Xiluoya.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Xiluoya.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Xiluoya.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Xiluoya.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Xiluoya.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Xiluoya.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Xiluoya.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Xiluoya.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Xiluoya.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Xiluoya.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Xiluoya.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Xiluoya.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Xiluoya.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Xiluoya.LabelSmall</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme" parent="Base.AppTheme" />
+
+</resources>

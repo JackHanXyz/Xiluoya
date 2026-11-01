@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="112dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/content_top_padding"
+        android:paddingEnd="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            style="?materialCardViewFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#731C2028"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp"
+            app:strokeColor="#26FFFFFF"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_rounded_square_icon"
+                        android:backgroundTint="?colorPrimaryContainer"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_code_24dp"
+                        android:tint="?colorOnPrimaryContainer"
+                        android:tintMode="src_in" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="LSPatch"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lspatch_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="?colorOnSurfaceVariant"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_open"
+                    style="@style/CardButton"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/home_lspatch_button_open"
+                    app:icon="@drawable/ic_open_in_new_24dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_patch"
+                    style="@style/CardButton"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/home_lspatch_button_patch"
+                    app:icon="@drawable/ic_code_24dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_install"
+                    style="@style/CardButton"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/home_lspatch_button_install"
+                    app:icon="@drawable/ic_install_24dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="@dimen/content_top_padding">
+
+    <TextView
+        android:id="@+id/text_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_lspatch_patch_hint"
+        android:textColor="?colorOnSurfaceVariant"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_pick"
+        style="@style/CardButton"
+        android:layout_marginTop="12dp"
+        android:text="@string/home_lspatch_patch_pick"
+        app:icon="@drawable/ic_code_24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_modules"
+        style="@style/CardButton"
+        android:text="@string/patch_modules_button"
+        app:icon="@drawable/ic_code_24dp" />
+
+    <TextView
+        android:id="@+id/text_modules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/patch_modules_none"
+        android:textColor="?colorOnSurfaceVariant"
+        android:textSize="12sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_install"
+        style="@style/CardButton"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/home_lspatch_patch_install"
+        app:icon="@drawable/ic_install_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="?colorSurfaceContainerLow"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/patch_history_title"
+        android:textColor="?colorPrimary"
+        android:textSize="12sp"
+        android:textFontWeight="600"
+        android:letterSpacing="0.04" />
+
+    <LinearLayout
+        android:id="@+id/history_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/patch_log_title"
+        android:textColor="?colorPrimary"
+        android:textSize="12sp"
+        android:textFontWeight="600"
+        android:letterSpacing="0.04" />
+
+    <TextView
+        android:id="@+id/text_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textIsSelectable="true"
+            android:textSize="11sp" />
+    </ScrollView>
+
+</LinearLayout>

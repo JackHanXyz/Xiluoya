@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="start_service"
+        android:enabled="true"
+        android:icon="@drawable/ic_server_start_24dp"
+        android:shortcutShortLabel="@string/shortcut_start"
+        android:shortcutLongLabel="@string/shortcut_start_long">
+        <intent
+            android:action="moe.xiluoya.action.START_SERVICE"
+            android:targetPackage="moe.xiluoya"
+            android:targetClass="moe.shizuku.manager.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="patch_apk"
+        android:enabled="true"
+        android:icon="@drawable/ic_code_24dp"
+        android:shortcutShortLabel="@string/shortcut_patch"
+        android:shortcutLongLabel="@string/shortcut_patch_long">
+        <intent
+            android:action="moe.xiluoya.action.PATCH"
+            android:targetPackage="moe.xiluoya"
+            android:targetClass="moe.shizuku.manager.lspatch.LspatchPatchActivity" />
+    </shortcut>
+</shortcuts>

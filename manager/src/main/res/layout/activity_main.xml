@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    app:consumeSystemWindowsInsets="start|end"
+    app:edgeToEdge="true"
+    app:fitsSystemWindowsInsets="start|end">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_wallpaper" />
+
+    <!-- 蒙层：把画面再压一层黑，保证文字对比度 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpaper_scrim" />
+
+    <include layout="@layout/appbar" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 悬浮胶囊导航：脱离屏幕边缘，靠阴影浮在内容之上 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/nav_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#EB1C2028"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="10dp"
+        app:strokeColor="#26FFFFFF"
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@style/XiluoyaNavIndicator"
+            app:itemIconTint="?colorOnSurfaceVariant"
+            app:itemPaddingBottom="8dp"
+            app:itemPaddingTop="8dp"
+            app:itemTextColor="?colorOnSurfaceVariant"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

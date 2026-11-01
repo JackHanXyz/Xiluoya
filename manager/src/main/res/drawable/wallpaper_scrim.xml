@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 顶部让壁纸透一点，底部压深，避免人物下半身抢视线 -->
+    <gradient
+        android:angle="270"
+        android:endColor="#D9000000"
+        android:startColor="#59000000"
+        android:type="linear" />
+</shape>

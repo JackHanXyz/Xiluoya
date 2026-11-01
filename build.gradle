@@ -1,0 +1,35 @@
+plugins {
+    id("idea")
+}
+
+idea.module {
+    excludeDirs += file('out')
+}
+
+subprojects {
+    plugins.withId("com.android.base") {
+        android {
+            compileSdk = 36
+            buildToolsVersion = "36.0.0"
+            ndkVersion = "27.1.12297006"
+            defaultConfig {
+                minSdk = 24
+                targetSdk = 36
+            }
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_21
+                targetCompatibility = JavaVersion.VERSION_21
+            }
+        }
+    }
+}
+
+apply from: 'api/manifest.gradle'
+def gitCommitId = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
+def gitCommitCount = Integer.parseInt('git rev-list --count HEAD'.execute([], project.rootDir).text.trim())
+def baseVersionName = "${api_version_major}.6.0"
+ext {
+    // Xiluoya: 固定 versionCode，避免 shallow clone 下 gitCommitCount 恒为 1 导致无法升级安装
+    versionCode = 13060
+    versionName = "${baseVersionName}-Xiluoya"
+}
