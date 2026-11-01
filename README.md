@@ -1,5 +1,9 @@
 # Xiluoya（汐洛雅）
 
+<p align="center">
+  <img src="docs/icon.png" width="180" alt="Xiluoya 应用图标">
+</p>
+
 基于 [Shizuku](https://github.com/RikkaApps/Shizuku) 与 [LSPatch](https://github.com/LSPosed/LSPatch) 的安卓工具箱——通过本机 ADB 启动服务、给 APK 打补丁并内嵌 Xposed 模块，全程只需要一台手机。
 
 ## 功能
